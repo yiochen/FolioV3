@@ -1,28 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <main-view></main-view>
   </div>
 </template>
 
 <script>
 import Hello from './components/Hello'
-
+import MainView from './sections/main'
 export default {
   name: 'app',
   components: {
-    Hello
+    MainView
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import '../static/css/global.scss';
 </style>
