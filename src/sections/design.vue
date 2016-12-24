@@ -7,21 +7,15 @@
         <img v-lazy="'../../static/images/design/Semiformal.png'">
         -->
         <project-card project-title="ChinaBlue"
-            description="Poster design for campus club"><project-card>
+            description="Poster design for campus club"></project-card>
+        
+        <nav-arrow class="next-arrow" label="Contact"></nav-arrow>
     </section>
 </template>
-<script>
-    import ProjectCard from '../components/project-card';
-    import BackgroundText from '../components/background-text';
-    export default {
-        components: {ProjectCard, BackgroundText}
-    }
-</script>
+
 <style scoped lang="scss">
 
     @import "../../static/css/global.scss";
     
-    img {
-        width: 100%;
-    }
+   
 </style>

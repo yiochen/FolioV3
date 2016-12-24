@@ -7,6 +7,8 @@
             
         </div>
         <p class="notice">This site is currently under development. Please excuse its appearance now. :)</p>
+
+        <nav-arrow class="next-arrow" label="Game"></nav-arrow>
     </section>
 </template>
 
@@ -52,4 +54,6 @@
             height: 300px;
         }
     }
+
+    
 </style>

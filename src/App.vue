@@ -4,6 +4,7 @@
     <game-view></game-view>
     <front-end-view></front-end-view>
     <design-view></design-view>
+    <contact-view></contact-view>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import MainView from './sections/main';
 import GameView from './sections/games';
 import FrontEndView from './sections/front-end';
 import DesignView from './sections/design';
+import ContactView from './sections/contact';
 
 export default {
   name: 'app',
@@ -20,7 +22,8 @@ export default {
     MainView,
     GameView,
     FrontEndView,
-    DesignView
+    DesignView,
+    ContactView
   }
 };
 </script>

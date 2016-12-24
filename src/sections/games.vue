@@ -12,21 +12,12 @@
             description="RTS game that lets you conquer the universe"></project-card>
         
         
-        
+        <nav-arrow class="next-arrow" label="Front End"></nav-arrow>
     </section>
 </template>
-<script>
-    import ProjectCard from '../components/project-card';
-    import BackgroundText from '../components/background-text';
-    export default {
-        components: {ProjectCard, BackgroundText}
-    }
-</script>
+
 <style scoped lang="scss">
 
     @import "../../static/css/global.scss";
 
-    img {
-        width: 100%;
-    }
 </style>
