@@ -9,10 +9,19 @@
         <project-card project-title="ChinaBlue"
             description="Poster design for campus club"></project-card>
         
-        <nav-arrow class="next-arrow" label="Contact"></nav-arrow>
+        <nav-arrow class="next-arrow" label="Contact" @click="next(4)"></nav-arrow>
     </section>
 </template>
-
+<script>
+    import scrollTo from '../services/scroll-service';
+    export default {
+        methods: {
+            next: function(sectionIndex) {
+                scrollTo(window.innerHeight * sectionIndex, 1000);
+            }
+        }
+    }
+</script>
 <style scoped lang="scss">
 
     @import "../../static/css/global.scss";

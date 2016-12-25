@@ -10,10 +10,19 @@
             description="Dynamically generated floral pattern"></project-card>
         <project-card project-title="Solar"
             description="Space shooter game using Three.js"></project-card>
-        <nav-arrow class="next-arrow" label="Design"></nav-arrow>
+        <nav-arrow class="next-arrow" label="Design" @click="next(3)"></nav-arrow>
     </section>
 </template>
-
+<script>
+    import scrollTo from '../services/scroll-service';
+    export default {
+        methods: {
+            next: function(sectionIndex) {
+                scrollTo(window.innerHeight * sectionIndex, 1000);
+            }
+        }
+    }
+</script>
 <style scoped lang="scss">
 
     @import "../../static/css/global.scss";

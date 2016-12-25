@@ -8,10 +8,20 @@
         </div>
         <p class="notice">This site is currently under development. Please excuse its appearance now. :)</p>
 
-        <nav-arrow class="next-arrow" label="Game"></nav-arrow>
+        <nav-arrow class="next-arrow" label="Game" @click="next(1)"></nav-arrow>
+        
     </section>
 </template>
-
+<script>
+    import scrollTo from '../services/scroll-service';
+    export default {
+        methods: {
+            next: function(sectionIndex) {
+                scrollTo(window.innerHeight * sectionIndex, 1000);
+            }
+        }
+    }
+</script>
 <style scoped lang="scss">
     @import "../../static/css/global.scss";
     

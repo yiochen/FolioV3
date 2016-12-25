@@ -1,8 +1,8 @@
 <template>
-    <div class="arrow-container">
+    <button class="arrow-container" @click="next()">
         <img src="../../static/images/Arrow.png">
         <span v-if="label">{{label}}</span>
-    </div>
+    </button>
 </template>
 <script>
     export default {
@@ -10,15 +10,20 @@
             label: {
                 type: String
             }
+        },methods: {
+            next: function() {
+                console.log('next');
+                this.$emit('click');
+            }
         }
     };
 </script>
 <style scoped lang="scss">
     .arrow-container {
+        border: 0;
         span {
             position: absolute;
-            top: 5px;
-            left: 20px;
+            left: calc(50% + 20px);
             font-size: 14px;
             white-space: nowrap;
         }
