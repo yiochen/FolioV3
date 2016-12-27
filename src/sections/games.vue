@@ -9,7 +9,8 @@
         <project-card project-title="Cheese" 
             description="A fast paced zombie survival game"></project-card>
         <project-card project-title="SiegeNebula" 
-            description="RTS game that lets you conquer the universe"></project-card>
+            description="RTS game that lets you conquer the universe"
+            project-path="projects/siege"></project-card>
         
         
         <nav-arrow class="next-arrow" label="Front End" @click="next(2)"></nav-arrow>

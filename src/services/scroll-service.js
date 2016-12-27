@@ -2,11 +2,10 @@ export default function smooth_scroll_to (target, duration) {
     target = Math.round(target);
     duration = Math.round(duration);
      var getScrollTop = function () {
-        return Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
+        return Math.max(document.documentElement.scrollTop, document.body.scrollTop);
     }
 
     var setScrollTop = function (value) {
-        window.pageYOffset = value;
         document.documentElement.scrollTop = value;
         document.body.scrollTop = value;
     }

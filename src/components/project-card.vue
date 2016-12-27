@@ -1,6 +1,9 @@
 <template>
     <div class="card" >
-        <h2 class="title">{{projectTitle}}</h2>
+        <router-link :to="projectPath" v-if="projectPath">
+            <h2 class="title">{{projectTitle}}</h2>
+        </router-link>
+        <h2 class="title" v-if="!projectPath">{{projectTitle}}</h2>
         <p class="description">{{description}}</p>
     </div>
     
@@ -16,6 +19,10 @@
             description: {
                 type: String,
                 default: 'description'
+            },
+            projectPath: {
+                type: String,
+                default: ''
             }
         },
         methods:{
