@@ -2,7 +2,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import SiegeNebulaProject from './projects/siege-nebula';
+import SiegeNebula from './projects/siege-nebula';
+import ProjectCheese from './projects/project-cheese';
+import ProjectChinaBlue from './projects/project-china-blue';
+
 import HomePage from './home-page';
 import ProjectContainer from './projects/project-container';
 
@@ -11,7 +14,9 @@ const routes= [
     { path: '/', component: HomePage},
     { path: '/projects', component: ProjectContainer,
       children: [
-          { path: 'siege', component: SiegeNebulaProject}
+          { path: 'siege', component: SiegeNebula},
+          { path: 'cheese', component: ProjectCheese},
+          { path: 'chinablue', component: ProjectChinaBlue}
       ]
     }
     

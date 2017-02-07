@@ -1,6 +1,6 @@
 <template>
     <button class="arrow-container" @click="next()">
-        <img src="../../static/images/Arrow.png">
+        <img src="../../static/images/Arrow.png" :class="orientation">
         <span v-if="label">{{label}}</span>
     </button>
 </template>
@@ -9,6 +9,10 @@
         props:{
             label: {
                 type: String
+            },
+            orientation: {
+                type: String,
+                default: 'down'
             }
         },methods: {
             next: function() {
@@ -28,4 +32,15 @@
             white-space: nowrap;
         }
     }
+
+    .left {
+        transform: rotate(90deg);
+    }
+    .right {
+        transform: rotate(-90deg);
+    }
+    .up {
+        transform: rotate(180deg);
+    }
+    .down {}
 </style>

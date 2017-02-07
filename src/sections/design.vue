@@ -7,7 +7,7 @@
         <img v-lazy="'../../static/images/design/Semiformal.png'">
         -->
         <project-card project-title="ChinaBlue"
-            description="Poster design for campus club"></project-card>
+            description="Poster design for campus club" project-path="projects/chinablue"></project-card>
         
         <nav-arrow class="next-arrow" label="Contact" @click="next(4)"></nav-arrow>
     </section>
