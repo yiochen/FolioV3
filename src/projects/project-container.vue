@@ -60,7 +60,7 @@
         }
     }
 
-    @media (min-width: 600px) {
+    @media (min-width: 800px) {
         .middle-image {
             width: 50%;
             margin-left: 25%;

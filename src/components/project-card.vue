@@ -57,4 +57,11 @@
         flex-grow: 1;
         margin-bottom: 0;
     }
+    @media(min-width: 800px) {
+        .card {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 </style>
