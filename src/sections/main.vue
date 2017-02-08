@@ -6,8 +6,15 @@
             <h5 class="description">I am a front-end developer / game developer</h5>
             
         </div>
-        <p class="notice">This site is currently under development. Please excuse its appearance now. :)</p>
-
+        
+        <ul class="nav-links">
+            <li><router-link to="/game">Game</router-link></li>
+            <li><router-link to="/front">Front-end</router-link></li>
+            <li><router-link to="/design">Design</router-link></li>
+            <li><router-link to="/contact">Contact</router-link></li>
+        </ul>
+        
+        
         <nav-arrow class="next-arrow" label="Game" @click="next(1)"></nav-arrow>
         
     </section>
@@ -58,12 +65,33 @@
         top: 0;
     }
 
-    @media(max-width: 760px) {
-        .intro {
-            width: 300px;
-            height: 300px;
+    .nav-links {
+        width: 400px;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        li {
+            display: inline-block;
+            a {
+                text-decoration: none;
+                color: $text-color;
+            }
         }
     }
+
+    @media(max-width: 800px) {
+        .intro {
+            height: 300px;
+            width: 300px;
+        }
+
+        .nav-links {
+            width: 300px;
+        }
+    }
+    
 
     
 </style>
