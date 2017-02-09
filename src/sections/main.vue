@@ -8,7 +8,7 @@
         
         <div class="nav-links">
             <router-link to="/game">Game</router-link>
-            <router-link to="/front">Front-end</router-link>
+            <router-link to="/front">FrontEnd</router-link>
             <router-link to="/design">Design</router-link>
             <router-link to="/contact">Contact</router-link>
         </div>
