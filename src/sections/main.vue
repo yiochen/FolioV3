@@ -6,12 +6,12 @@
             <h5 class="description">I am a front-end developer / game developer</h5>
         </div>
         
-        <ul class="nav-links">
-            <li><router-link to="/game">Game</router-link></li>
-            <li><router-link to="/front">Front-end</router-link></li>
-            <li><router-link to="/design">Design</router-link></li>
-            <li><router-link to="/contact">Contact</router-link></li>
-        </ul>
+        <div class="nav-links">
+            <router-link to="/game">Game</router-link>
+            <router-link to="/front">Front-end</router-link>
+            <router-link to="/design">Design</router-link>
+            <router-link to="/contact">Contact</router-link>
+        </div>
     </section>
 </template>
 
@@ -59,16 +59,16 @@
         justify-content: space-between;
         margin-left: auto;
         margin-right: auto;
-        li {
+        a {
             padding: 10px 15px;
             display: inline-block;
-            a {
-                text-decoration: none;
-                color: $text-color;
-            }
+            
+            text-decoration: none;
+            color: $text-color;
+        
         }
 
-        li:hover {
+        a:hover {
             background: $background-text-color;
         }
     }
