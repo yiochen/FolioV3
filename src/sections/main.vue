@@ -4,7 +4,6 @@
             <h1 class="hi">Hi</h1>
             <h2>I am Yiou</h2>
             <h5 class="description">I am a front-end developer / game developer</h5>
-            
         </div>
         
         <ul class="nav-links">
@@ -13,22 +12,9 @@
             <li><router-link to="/design">Design</router-link></li>
             <li><router-link to="/contact">Contact</router-link></li>
         </ul>
-        
-        
-        <nav-arrow class="next-arrow" label="Game" @click="next(1)"></nav-arrow>
-        
     </section>
 </template>
-<script>
-    import scrollTo from '../services/scroll-service';
-    export default {
-        methods: {
-            next: function(sectionIndex) {
-                scrollTo(window.innerHeight * sectionIndex, 1000);
-            }
-        }
-    }
-</script>
+
 <style scoped lang="scss">
     @import "../../static/css/global.scss";
     
@@ -66,6 +52,7 @@
     }
 
     .nav-links {
+        margin-top: 20px;
         width: 400px;
         max-width: 100%;
         display: flex;
@@ -73,11 +60,16 @@
         margin-left: auto;
         margin-right: auto;
         li {
+            padding: 10px 15px;
             display: inline-block;
             a {
                 text-decoration: none;
                 color: $text-color;
             }
+        }
+
+        li:hover {
+            background: $background-text-color;
         }
     }
 
@@ -89,7 +81,15 @@
 
         .nav-links {
             width: 300px;
+            margin-top: 10px;
+            li {
+                padding: 0;
+            }
+            li:hover {
+                background: transparent;
+            }
         }
+        
     }
     
 

@@ -18,5 +18,6 @@
         overflow: hidden;
         white-space: nowrap;
         color: $background-text-color;
+        z-index: 0;
     }
 </style>

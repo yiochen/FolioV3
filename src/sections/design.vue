@@ -1,6 +1,9 @@
 <template>
     <section class="fullscreen">
-        <div class="section-intro">I know a bit about photoshop</div>
+        <div class="section-intro">
+            <router-link to="/"><logo></logo></router-link>
+            <p>I know a bit about photoshop</p>
+        </div>
         <background-text text="Design"></background-text>
         <!--
         <img v-lazy="'../../static/images/design/Mid-Autumn.png'">

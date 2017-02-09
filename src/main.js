@@ -5,16 +5,17 @@ import router from './routes';
 import App from './App';
 
 import VueLazyload from 'vue-lazyload';
-import NavArrow from './components/nav-arrow';
-import ProjectCard from './components/project-card';
-import BackgroundText from './components/background-text';
-
-
-import ProjectTitle from './components/project-title';
-import GithubRibbon from './components/github-ribbon';
 import VueMarkdown from 'vue-markdown';
 import VueResource from 'vue-resource';
 import MarkdownLoader from './components/markdown-loader';
+
+import NavArrow from './components/nav-arrow';
+import ProjectCard from './components/project-card';
+import BackgroundText from './components/background-text';
+import ProjectTitle from './components/project-title';
+import GithubRibbon from './components/github-ribbon';
+import Logo from './components/logo';
+
 Vue.use(VueLazyload, {
     preload: 1.3,
     loading: '../static/images/loading.png',
@@ -29,6 +30,7 @@ Vue.component("ProjectTitle", ProjectTitle);
 Vue.component("GithubRibbon", GithubRibbon);
 Vue.component("VueMarkdown", VueMarkdown);
 Vue.component("MarkdownLoader", MarkdownLoader);
+Vue.component("Logo", Logo);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

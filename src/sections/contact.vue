@@ -1,7 +1,8 @@
 <template>
     <section class="fullscreen contact-container">
         <img class="background" v-lazy="'../../static/images/me_vertical_02.png'">
-        <h1 class="title">More about me?</h1>
+        
+        <h1 class="title"><router-link to="/"><logo></logo></router-link>More about me?</h1>
 
         <div class="contacts">
             <p>EMAIL: chen.yiou1992@gmail.com</p>
@@ -20,6 +21,11 @@
         text-align: center;
         margin-top: 30px;
         z-index: 1;
+        position: relative;
+        span.yiou-logo {
+            color: $text-color;
+            font-size: 60px;
+        }
     }
     .background {
         position: absolute;

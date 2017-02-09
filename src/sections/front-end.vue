@@ -1,6 +1,9 @@
 <template>
     <section class="fullscreen">
-        <div class="section-intro"> I also fiddle with the newest and coolest front-end technologies</div>
+        <div class="section-intro">
+            <router-link to="/"><logo></logo></router-link>
+            <p>I also fiddle with the newest and coolest front-end technologies</p>
+        </div>
         <background-text text="front end"></background-text>
         <!--
         <img v-lazy="'../../static/images/front/floral.png'">
@@ -14,7 +17,7 @@
             description="A simple Ionic app for saving favorate pieces from DeviantArt.com"></project-card>
         <project-card project-title="tMood"
             description="A Pebble watch app for detecting the emotional level around you"></project-card>
-        <nav-arrow class="next-arrow" label="Design" @click="next(3)"></nav-arrow>
+        
     </section>
 </template>
 <script>

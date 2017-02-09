@@ -1,6 +1,9 @@
 <template>
     <section class="fullscreen">
-        <div class="section-intro">I make games using Unity and Cocos2d-x</div>
+        <div class="section-intro">
+            <router-link to="/"><logo></logo></router-link>
+            <p>I make games using Unity and Cocos2d-x</p>
+        </div>
         <background-text text="Game Dev"></background-text>
         <!--
         <img v-lazy="'../../static/images/games/siegeLvl.png'">
@@ -12,21 +15,9 @@
         <project-card project-title="SiegeNebula" 
             description="RTS game that lets you conquer the universe"
             project-path="projects/siege"></project-card>
-        
-        
-        <nav-arrow class="next-arrow" label="Front End" @click="next(2)"></nav-arrow>
     </section>
 </template>
-<script>
-    import scrollTo from '../services/scroll-service';
-    export default {
-        methods: {
-            next: function(sectionIndex) {
-                scrollTo(window.innerHeight * sectionIndex, 1000);
-            }
-        }
-    }
-</script>
+
 <style scoped lang="scss">
 
     @import "../../static/css/global.scss";

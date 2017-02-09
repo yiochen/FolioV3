@@ -42,6 +42,8 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        z-index: 1;
+        position: relative;
     }
     .title {
         flex-shrink: 0;
