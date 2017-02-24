@@ -1,10 +1,11 @@
 <template>
-    <div>
+    <transition name="fade">
+    <section class="fullscreen">
         <a @click="goBack()"><nav-arrow orientation="left"></nav-arrow></a>
         <router-view></router-view>
         <a @click="goBack()"><nav-arrow orientation="left"></nav-arrow></a>
-    </div>
-
+    </section>
+    </transition>
 </template>
 
 <script>

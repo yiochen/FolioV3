@@ -15,6 +15,7 @@ import BackgroundText from './components/background-text';
 import ProjectTitle from './components/project-title';
 import GithubRibbon from './components/github-ribbon';
 import Logo from './components/logo';
+import CloudImage from './components/cloud-image';
 
 Vue.use(VueLazyload, {
     preload: 1.3,
@@ -31,6 +32,7 @@ Vue.component("GithubRibbon", GithubRibbon);
 Vue.component("VueMarkdown", VueMarkdown);
 Vue.component("MarkdownLoader", MarkdownLoader);
 Vue.component("Logo", Logo);
+Vue.component("CloudImage", CloudImage);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

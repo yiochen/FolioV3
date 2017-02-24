@@ -1,4 +1,5 @@
 <template>
+    <transition name="fade">
     <section class="fullscreen contact-container">
         <img class="background" v-lazy="'../../static/images/me_vertical_02.png'">
         
@@ -20,6 +21,7 @@
             <div v-if="emailOpened" class="email" contenteditable="true">{{email}}</div>
         </div>
     </section>
+    </transition>
 </template>
 <script>
     export default {

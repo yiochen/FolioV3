@@ -1,4 +1,5 @@
 <template>
+    <transition name="fade">
     <section class="fullscreen main-container">
         <div class="intro">
             <h1 class="hi">Hi</h1>
@@ -13,6 +14,7 @@
             <router-link to="/contact">Contact</router-link>
         </div>
     </section>
+    </transition>
 </template>
 
 <style scoped lang="scss">

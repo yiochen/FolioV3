@@ -1,4 +1,5 @@
 <template>
+    <transition name="fade">
     <section class="fullscreen">
         <div class="section-intro">
             <router-link to="/"><logo></logo></router-link>
@@ -11,9 +12,8 @@
         -->
         <project-card project-title="ChinaBlue"
             description="Poster design for campus club" project-path="projects/chinablue"></project-card>
-        
-        
     </section>
+    </transition>
 </template>
 
 <style scoped lang="scss">

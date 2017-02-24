@@ -4,4 +4,10 @@
   </div>
 </template>
 
+<style>
+  #app {
+    overflow: hidden;
+    height: 100vh;
+  }
+</style>
 
