@@ -50,6 +50,13 @@ module.exports = {
     loaders: [
       {
         test: /\.vue$/,
+        include: path.resolve(projectRoot, './src'),
+        exclude: path.resolve(projectRoot, './src/blogs'),
+        loader: 'vue'
+      },
+      {
+        test: /\.vue$/,
+        include: path.resolve(projectRoot, './src/blogs'),
         loader: 'vue'
       },
       {

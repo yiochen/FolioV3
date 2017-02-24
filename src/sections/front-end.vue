@@ -1,4 +1,5 @@
 <template>
+    <transition name="fade">
     <section class="fullscreen">
         <div class="section-intro">
             <router-link to="/"><logo></logo></router-link>
@@ -19,6 +20,7 @@
             description="A Pebble watch app for detecting the emotional level around you"></project-card>
         
     </section>
+    </transition>
 </template>
 <script>
     import scrollTo from '../services/scroll-service';
