@@ -24,8 +24,8 @@ const routes= [
     { path: '/contact', component: ContactView },
     { path: '/projects', component: ProjectContainer,
       children: [
-          { path: 'siege', component: SiegeNebula},
-          { path: 'cheese', component: ProjectCheese},
+          { path: 'game/siege', component: SiegeNebula},
+          { path: 'game/cheese', component: ProjectCheese},
           { path: 'chinablue', component: ProjectChinaBlue}
       ]
     }

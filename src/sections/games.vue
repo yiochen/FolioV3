@@ -11,10 +11,10 @@
         -->
         <project-card project-title="Cheese" 
             description="A fast paced zombie survival game"
-            project-path="projects/cheese"></project-card>
+            project-path="projects/game/cheese"></project-card>
         <project-card project-title="SiegeNebula" 
             description="RTS game that lets you conquer the universe"
-            project-path="projects/siege"></project-card>
+            project-path="projects/game/siege"></project-card>
     </section>
 </template>
 

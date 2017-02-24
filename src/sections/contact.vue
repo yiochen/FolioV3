@@ -25,7 +25,7 @@
     export default {
         data: function() {
             return {
-                email: "chen.yiou1992@gmail.com",
+                email: "chen."+"yiou"+"1992@gmail.com",
                 emailOpened: false
             }
         },

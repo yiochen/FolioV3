@@ -1,15 +1,19 @@
 <template>
     <div>
-        <router-link to="/"><nav-arrow orientation="left"></nav-arrow></router-link>
+        <a @click="goBack()"><nav-arrow orientation="left"></nav-arrow></a>
         <router-view></router-view>
-       <router-link to="/"><nav-arrow orientation="left"></nav-arrow></router-link>
+        <a @click="goBack()"><nav-arrow orientation="left"></nav-arrow></a>
     </div>
 
 </template>
 
 <script>
-    import projects from '../services/project-manager';
-    
+    import router from '../routes.js';
+    module.exports = {
+        methods: {
+            goBack: () => router.go(-1)
+        }
+    }
 </script>
 
 <style lang="scss">
