@@ -18,6 +18,8 @@
 </script>
 
 <style lang="scss">
+    @import "../../static/css/global.scss";
+
     article {
         max-width: 800px;
         margin-left: auto;
