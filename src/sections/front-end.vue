@@ -11,7 +11,8 @@
         <img v-lazy="'../../static/images/front/solar.png'">
         -->
         <project-card project-title="Floral"
-            description="Dynamically generated floral pattern"></project-card>
+            description="Dynamically generated floral pattern"
+            project-path="projects/floral"></project-card>
         <project-card project-title="Solar"
             description="Space shooter game using Three.js"></project-card>
         <project-card project-title="deviMark"
