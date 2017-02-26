@@ -17,8 +17,11 @@
                 <a class="contact-icon" href="https://www.linkedin.com/in/yiouchen" target="_blank">
                     <span class="icon-linkedin"></span>
                 </a>
+                <transition name="fade">
+                    <div v-if="emailOpened" class="email" contenteditable="true">{{email}}</div>
+                </transition>
             </div>
-            <div v-if="emailOpened" class="email" contenteditable="true">{{email}}</div>
+            
         </div>
     </section>
     </transition>
@@ -101,6 +104,7 @@
             width: 100%;
             display: flex;
             justify-content: space-around;
+            position: relative;
         }
         .contact-icon {
             color: $text-color;
@@ -113,7 +117,9 @@
             background: white;
             width: 100%;
             padding: 10px;
-            position: relative;
+            position: absolute;
+            top: 100%;
+            left: 0;
         }
     }
 </style>

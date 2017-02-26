@@ -62,7 +62,7 @@
         margin-left: auto;
         margin-right: auto;
         a {
-            padding: 10px 15px;
+            padding: 10px 5px;
             display: inline-block;
             
             text-decoration: none;

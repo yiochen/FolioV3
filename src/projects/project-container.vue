@@ -1,9 +1,9 @@
 <template>
     <transition name="fade">
-    <section class="fullscreen">
-        <a @click="goBack()"><nav-arrow orientation="left"></nav-arrow></a>
+    <section class="fullscreen project-container">
+        <back-button></back-button>
         <router-view></router-view>
-        <a @click="goBack()"><nav-arrow orientation="left"></nav-arrow></a>
+        <back-button></back-button>
     </section>
     </transition>
 </template>
@@ -19,7 +19,9 @@
 
 <style lang="scss">
     @import "../../static/css/global.scss";
-
+    .project-container {
+        overflow-y: scroll;
+    }
     article {
         max-width: 800px;
         margin-left: auto;

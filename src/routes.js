@@ -6,6 +6,9 @@ import SiegeNebula from './projects/siege-nebula';
 import ProjectCheese from './projects/project-cheese';
 import ProjectChinaBlue from './projects/project-china-blue';
 import ProjectFloral from './projects/project-floral';
+import ProjectSolar from './projects/project-solar';
+import ProjectDevimark from './projects/project-devimark';
+import ProjectTMood from './projects/project-tmood';
 
 import MainView from './sections/main';
 import GameView from './sections/games';
@@ -30,7 +33,10 @@ const routes= [
           { path: 'siege', component: SiegeNebula},
           { path: 'cheese', component: ProjectCheese},
           { path: 'chinablue', component: ProjectChinaBlue},
-          { path: 'floral', component: ProjectFloral}
+          { path: 'floral', component: ProjectFloral},
+          { path: 'solar', component: ProjectSolar},
+          { path: 'devimark', component: ProjectDevimark},
+          { path: 'tmood', component: ProjectTMood}
       ]
     },
     { path: '/test', component: Blog }

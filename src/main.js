@@ -16,6 +16,8 @@ import ProjectTitle from './components/project-title';
 import GithubRibbon from './components/github-ribbon';
 import Logo from './components/logo';
 import CloudImage from './components/cloud-image';
+import BackButton from './components/back-button';
+import CloudVideo from './components/cloud-video';
 
 Vue.use(VueLazyload, {
     preload: 1.3,
@@ -33,6 +35,8 @@ Vue.component("VueMarkdown", VueMarkdown);
 Vue.component("MarkdownLoader", MarkdownLoader);
 Vue.component("Logo", Logo);
 Vue.component("CloudImage", CloudImage);
+Vue.component("BackButton", BackButton);
+Vue.component("CloudVideo", CloudVideo);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

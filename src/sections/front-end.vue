@@ -14,11 +14,13 @@
             description="Dynamically generated floral pattern"
             project-path="projects/floral"></project-card>
         <project-card project-title="Solar"
-            description="Space shooter game using Three.js"></project-card>
+            description="Sound visualizater made in good old Flash" project-path="projects/solar"></project-card>
         <project-card project-title="deviMark"
-            description="A simple Ionic app for saving favorate pieces from DeviantArt.com"></project-card>
+            description="A simple Ionic app for saving favorate pieces from DeviantArt.com"
+            project-path="projects/devimark"></project-card>
         <project-card project-title="tMood"
-            description="A Pebble watch app for detecting the emotional level around you"></project-card>
+            description="A Pebble watch app for detecting the emotional level around you"
+            project-path="projects/tmood"></project-card>
         
     </section>
     </transition>

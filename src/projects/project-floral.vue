@@ -9,12 +9,10 @@
             <ol>
             <li>Starting from center of the canvas, create a root for the branch</li><li>Every frame, draw a small path.</li><li>Alter the direction of the path a little bit every frame so that the resulting shape is curved.</li><li>At some point, create a new branch from the current branch.</li><li>Stop when the branch is curving too much.</li></ol>
             <p>The difficult part is the math. In order to generate smooth shapes, I need to control the variation for path direction. I ended up using a very simple approach by giving the branch a constantly reducing angular force.</p>
-            <p>The force is always perpendicular to the path. For example, initially, the path is moving upwards, and the force is pointing to the right, it will gradually bend the path counter clockwise, until the force is reduced to negative, then it start bending the path clockwise. This results in a potentially nice “S” shape.</p>
-            <p>Because the algorithm is so simple. A lot of the time it doesn’t result in a nice looking shape. However, once in a while, it will generate some amazon patterns.</p>
-            <video width="100%" autoplay loop>
-                <source src="http://res.cloudinary.com/yiou-me/video/upload/v1487983986/front-end/floral-video.mp4" type="video/mp4">
-            </video>
+            <p>The force is always perpendicular to the path. For example, initially, the path is moving upwards, and the force is pointing to the right. It will gradually bend the path counter clockwise, until the force is reduced to negative. Then it starts bending the path clockwise. This results in a potentially pretty “S” shape.</p>
+            <p>Because the algorithm is so simple. A lot of the time it doesn’t result in a nice looking shape. However, once in a while, it will generate some amazing patterns.</p>
             
+            <cloud-video name="front-end/floral-video"></cloud-video>
         </article>
     </section>
 </template>
