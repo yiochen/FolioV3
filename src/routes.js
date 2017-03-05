@@ -19,8 +19,6 @@ import ContactView from './sections/contact';
 import HomePage from './home-page';
 import ProjectContainer from './projects/project-container';
 
-import Blog from './blogs/test';
-
 Vue.use(VueRouter);
 const routes= [
     { path: '/', component: MainView },
@@ -38,9 +36,7 @@ const routes= [
           { path: 'devimark', component: ProjectDevimark},
           { path: 'tmood', component: ProjectTMood}
       ]
-    },
-    { path: '/test', component: Blog }
-    
+    }
 ];
 
 const router = new VueRouter({
