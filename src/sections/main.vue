@@ -12,6 +12,7 @@
             <router-link to="/front">FrontEnd</router-link>
             <router-link to="/design">Design</router-link>
             <router-link to="/contact">Contact</router-link>
+            <a href="http://yiou.me/blog/">Blog</a>
         </div>
     </section>
     </transition>

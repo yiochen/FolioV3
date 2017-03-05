@@ -20,7 +20,7 @@
                     <div v-if="emailOpened" class="email" contenteditable="true">{{email}}</div>
                 </transition>
             </div>
-            <input >
+            
         </div>
     </section>
     </transition>
