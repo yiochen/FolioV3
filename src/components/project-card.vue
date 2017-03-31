@@ -1,11 +1,12 @@
 <template>
-    <div class="card" >
-        <router-link :to="projectPath" v-if="projectPath">
+    <router-link :to="projectPath" v-if="projectPath">
+        <div class="card hover-darken" >
+            
             <h2 class="title">{{projectTitle}}</h2>
-        </router-link>
-        <h2 class="title" v-if="!projectPath">{{projectTitle}}</h2>
-        <p class="description">{{description}}</p>
-    </div>
+        
+            <p class="description">{{description}}</p>
+        </div>
+    </router-link>
     
 </template>
 
@@ -36,15 +37,23 @@
 
 <style scoped lang="scss">
     @import "../../static/css/global.scss";
-    .card {
+    a{
+        color: $text-color;
+        text-decoration: none;
+        display: block;
         margin-top: 20px;
+    }
+    .card {
         padding: 10px 25px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         z-index: 1;
         position: relative;
+        box-sizing: border-box;
     }
+
+
     .title {
         flex-shrink: 0;
         display: inline-block;
@@ -60,7 +69,7 @@
         margin-bottom: 0;
     }
     @media(min-width: 800px) {
-        .card {
+        a {
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;

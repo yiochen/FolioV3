@@ -61,3 +61,29 @@ a h2{
         margin-right: auto;
     }
 }
+
+.no-shadow {
+    transition: box-shadow 0.3s;
+}
+
+.mini-shadow {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: box-shadow 0.3s;
+}
+.mini-shadow-hover:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: box-shadow 0.3s;
+}
+
+.large-shadow-hover:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: box-shadow 0.3s;
+}
+
+.hover-darken {
+    transition: background 0.3s ease;
+}
+.hover-darken:hover {
+    background: $hover-background-color;
+    transition: background 0.3s easel
+}

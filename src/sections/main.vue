@@ -71,12 +71,10 @@
             
             text-decoration: none;
             color: $text-color;
-        
+            @extend .hover-darken;
         }
 
-        a:hover {
-            background: $background-text-color;
-        }
+        
     }
 
     @media(max-width: 548px) {
