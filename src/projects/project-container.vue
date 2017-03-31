@@ -1,11 +1,11 @@
 <template>
-    <transition name="fade">
+    <!--<transition name="fade">-->
     <section class="fullscreen project-container">
         <back-button></back-button>
         <router-view></router-view>
         <back-button></back-button>
     </section>
-    </transition>
+    <!--</transition>-->
 </template>
 
 <script>
@@ -19,9 +19,7 @@
 
 <style lang="scss">
     @import "../../static/css/global.scss";
-    .project-container {
-        overflow-y: scroll;
-    }
+    
     article {
         max-width: 800px;
         margin-left: auto;

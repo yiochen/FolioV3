@@ -1,6 +1,6 @@
 <template>
-    <transition name="fade">
-    <section class="fullscreen">
+    <!--<transition name="fade">-->
+    <section>
         <div class="section-intro">
             <router-link to="/"><logo></logo></router-link>
             <p>I know a bit about Photoshop</p>
@@ -13,7 +13,7 @@
         <project-card project-title="ChinaBlue"
             description="Poster design for campus club" project-path="projects/chinablue"></project-card>
     </section>
-    </transition>
+    <!--</transition>-->
 </template>
 
 <style scoped lang="scss">

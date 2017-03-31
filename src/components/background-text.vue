@@ -15,9 +15,9 @@
         bottom: 0;
         font-size: 144px;
         font-family: 'Lobster', cursive;
-        overflow: hidden;
         white-space: nowrap;
         color: $background-text-color;
         z-index: 0;
+        margin: 0;
     }
 </style>

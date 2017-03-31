@@ -1,5 +1,5 @@
 <template>
-    <transition name="fade">
+    
     <section class="fullscreen">
         <div class="section-intro">
             <router-link to="/"><logo></logo></router-link>
@@ -17,7 +17,6 @@
             description="RTS game that lets you conquer the universe"
             project-path="projects/siege"></project-card>
     </section>
-    </transition>
 </template>
 
 <style scoped lang="scss">

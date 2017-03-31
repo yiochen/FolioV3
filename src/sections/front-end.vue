@@ -1,6 +1,6 @@
 <template>
-    <transition name="fade">
-    <section class="fullscreen">
+    <!--<transition name="fade">-->
+    <section>
         <div class="section-intro">
             <router-link to="/"><logo></logo></router-link>
             <p>I also fiddle with the newest and coolest front-end technologies</p>
@@ -23,18 +23,9 @@
             project-path="projects/tmood"></project-card>
         
     </section>
-    </transition>
+    <!--</transition>-->
 </template>
-<script>
-    import scrollTo from '../services/scroll-service';
-    export default {
-        methods: {
-            next: function(sectionIndex) {
-                scrollTo(window.innerHeight * sectionIndex, 1000);
-            }
-        }
-    }
-</script>
+
 <style scoped lang="scss">
 
     @import "../../static/css/global.scss";

@@ -1,6 +1,6 @@
 <template>
-    <transition name="fade">
-    <section class="fullscreen contact-container">
+    <!--<transition name="fade">-->
+    <section class="contact-container">
         
         <h1 class="title"><router-link to="/"><logo></logo></router-link>More about me?</h1>
 
@@ -16,14 +16,15 @@
 
                 <a class="contact-icon icon-linkedin" href="https://www.linkedin.com/in/yiouchen" target="_blank">
                 </a>
-                <transition name="fade">
-                    <div v-if="emailOpened" class="email" contenteditable="true">{{email}}</div>
-                </transition>
+                
             </div>
+            <transition name="fade">
+                <div v-show="emailOpened" class="email" contenteditable="true">{{email}}</div>
+            </transition>
             
         </div>
     </section>
-    </transition>
+    <!--</transition>-->
 </template>
 <script>
     export default {
@@ -50,29 +51,21 @@
         margin-top: 30px;
         z-index: 2;
         position: relative;
+        margin-top: 0;
         span.yiou-logo {
             color: $text-color;
             font-size: 60px;
         }
     }
-    .background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        opacity: 1;
-        
-    }
+    
     .contact-container {
-        
+        width: 100%;
+        min-height: 100vh;
         background: url(../../static/images/me_vertical_02.jpg);
         background-size: cover;
         background-position: center;
     }
     .contacts {
-
         width: 100%;
         max-width: 600px;
         font-size: 20px;
@@ -123,10 +116,11 @@
         }
 
         .email {
+            margin-top: 20px;
             background: white;
             width: 100%;
             padding: 10px;
-            position: absolute;
+            
             box-sizing: border-box;
             top: calc(100% + 10px);
             left: 0;
