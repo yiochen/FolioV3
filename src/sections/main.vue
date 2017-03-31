@@ -10,8 +10,8 @@
             </div>
         <div class="intro">
             <h1 class="hi">Hi</h1>
-            <h2>I am Yiou</h2>
-            <h5 class="description">I am a front-end developer / game developer</h5>
+            <h2>I am <i class="yiou">Yiou</i></h2>
+            <h5 class="description">I am a passionate <span class="underline">front-end developer</span> <span class="ampersand">&amp;</span> <span class="underline">game developer</span></h5>
         </div>
         
         
@@ -47,11 +47,27 @@
         overflow: hidden;
         @include folded-corner;
     }
-
+    .ampersand{
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 1.5em;
+        line-height: 1;
+        font-style: italic;
+    }
     .description {
         text-align: right;
+        font-family: Garamond, serif;
+        font-style: italic;
     }
-
+    .underline {
+        border-bottom: 1px solid $text-color;
+        padding-bottom: 2px;
+    }
+    .yiou {
+        background: $text-color;
+        color: $colored-background;
+        padding-right: 10px;
+    }
     .notice {
         position: absolute;
         top: 0;

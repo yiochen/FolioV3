@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Hello from './components/Hello';
+
 import MainView from './sections/main';
 import GameView from './sections/games';
 import FrontEndView from './sections/front-end';
