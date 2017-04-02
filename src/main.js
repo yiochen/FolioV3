@@ -18,6 +18,8 @@ import Logo from './components/logo';
 import CloudImage from './components/cloud-image';
 import BackButton from './components/back-button';
 import CloudVideo from './components/cloud-video';
+import Separator from './components/separator';
+import SectionIntro from './components/section-intro';
 
 Vue.use(VueLazyload, {
     preload: 1.3,
@@ -37,6 +39,8 @@ Vue.component("Logo", Logo);
 Vue.component("CloudImage", CloudImage);
 Vue.component("BackButton", BackButton);
 Vue.component("CloudVideo", CloudVideo);
+Vue.component("Separator", Separator);
+Vue.component("SectionIntro", SectionIntro);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

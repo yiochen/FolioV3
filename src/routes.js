@@ -9,6 +9,7 @@ import ProjectFloral from './projects/project-floral';
 import ProjectSolar from './projects/project-solar';
 import ProjectDevimark from './projects/project-devimark';
 import ProjectTMood from './projects/project-tmood';
+import ProjectMLNW from './projects/project-make-love-not-war';
 
 import MainView from './sections/main';
 import GameView from './sections/games';
@@ -34,7 +35,8 @@ const routes= [
           { path: 'floral', component: ProjectFloral},
           { path: 'solar', component: ProjectSolar},
           { path: 'devimark', component: ProjectDevimark},
-          { path: 'tmood', component: ProjectTMood}
+          { path: 'tmood', component: ProjectTMood},
+          { path: 'mlnw', component: ProjectMLNW}
       ]
     }
 ];

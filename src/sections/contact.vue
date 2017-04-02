@@ -5,7 +5,14 @@
         <h1 class="title"><router-link to="/"><logo></logo></router-link>More about me?</h1>
 
         <div class="contacts">
-            <p class="contact-intro">Hi, my name is Yiou Chen. Nice to meet you. I am a senior at Stony Brook University, graduating soon at May 2017. My strength are Front-end development and game programming, but I also try to keep a broad interest toward all kind of technologies. I am actively looking for a post-graduation full time opportunity as a software engineer. If you are interested, feel free to shoot me a email. I will be more than happy to talk to you.</p>
+            <div class="contact-intro">
+                <p>Hi, my name is <i>Yiou Chen</i> (pronounced like "E.O"). Thank you for stopping by. I am a senior at Stony Brook University, studying Computer Science and Digital Art. I am graduating <strong>very soon</strong> at <span class="underline">May 2017</span>. I am actively seeking full time position as a software engineer. If you are looking for some one and my portfolio happened to interest you, shoot me a email! I will be more than happy to talk with you about my qualification. </p>
+
+                <p>I am currently working at CA Technologies as a software engineer intern. At work, I play with <i>Angular</i> and <i>D3</i> magic. Recently, I am building responsive data visualizations that are both performant and user-friendly. I like to think about code structure and state management. My strength are Front-end development and game programming, but I also try to keep a broad interest toward all kind of technologies.
+                </p>
+
+                <p>Most of my projects are hosted on <a target="_blank" href="https://github.com/yiochen">Github</a>. Feel free to check them out! Wait, there is more, I am also keeping a <a target="_blank" href="http://yiou.me/blog">blog</a> <span class="small">(that no one reads)</span> on Web dev, game programming, etc. Check it out too!</p>
+            </div>
             <div class="contact-icons">
                 <div>
                 <a class="contact-icon icon-envelop" @click="openEmail">
@@ -61,7 +68,7 @@
     .contact-container {
         width: 100%;
         min-height: 100vh;
-        background: url(../../static/images/me_vertical_02.jpg);
+        // background: url(../../static/images/me_vertical_02.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -84,7 +91,14 @@
         
         .contact-intro {
             z-index: 1;
-            text-indent: 50px;
+            p {
+                text-indent: 50px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+            
         }
         &::before {
             content: '';
@@ -125,6 +139,10 @@
             top: calc(100% + 10px);
             left: 0;
             z-index: 1;
+        }
+
+        .small {
+            font-size: 0.5em;
         }
     }
 </style>

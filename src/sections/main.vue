@@ -5,14 +5,16 @@
                 <router-link to="/game">Game</router-link>
                 <router-link to="/front">FrontEnd</router-link>
                 <router-link to="/design">Design</router-link>
-                <router-link to="/contact">Contact</router-link>
+                <router-link to="/contact">About</router-link>
                 <a href="http://yiou.me/blog/">Blog</a>
             </div>
+        <transition name="fade" appear>
         <div class="intro">
             <h1 class="hi">Hi</h1>
-            <h2>I am <i class="yiou">Yiou</i></h2>
-            <h5 class="description">I am a passionate <span class="underline">front-end developer</span> <span class="ampersand">&amp;</span> <span class="underline">game developer</span></h5>
+            <h2>I am <router-link to="/contact" class="yiou">Yiou</router-link></h2>
+            <h5 class="description">I am a passionate <router-link to="/game" class="underline role">front-end developer</router-link> <span class="ampersand">&amp;</span> <router-link to="/front" class="underline role">game developer</router-link></h5>
         </div>
+        </transition>
         
         
     </section>
@@ -56,17 +58,41 @@
     }
     .description {
         text-align: right;
-        font-family: Garamond, serif;
+        font-family: serif;
         font-style: italic;
+        margin: 0;
     }
     .underline {
+        text-decoration: none;
+        
         border-bottom: 1px solid $text-color;
         padding-bottom: 2px;
     }
+
+    .role {
+        color: $text-color;
+        
+        transition: all 0.3s ease;
+    }
+
+    .role:hover {
+        color: $background-color;
+        border-bottom: 1px solid white;
+        padding-bottom: 5px;
+    }
     .yiou {
+        text-decoration: none;
+        font-style: italic;
         background: $text-color;
         color: $colored-background;
-        padding-right: 10px;
+        padding-right: 7px;
+        border-top: dotted 10px $colored-background;
+        transition: all 0.3s ease;
+    }
+
+    .yiou:hover {
+        background: white;
+        color: $text-color;
     }
     .notice {
         position: absolute;
