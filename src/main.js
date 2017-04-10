@@ -1,5 +1,10 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+
+require('assets/css/normalize.css');
+require('assets/css/skeleton.css');
+require('assets/icomoon/style.css');
+var path= require('path');
 import Vue from 'vue';
 import router from './routes';
 import App from './App';
@@ -23,7 +28,7 @@ import SectionIntro from './components/section-intro';
 
 Vue.use(VueLazyload, {
     preload: 1.3,
-    loading: '../static/images/loading.png',
+    loading: "https://res.cloudinary.com/yiou-me/image/upload/v1491867341/loading_ykuxq7.png",
     attempt: 1
 });
 Vue.use(VueResource);

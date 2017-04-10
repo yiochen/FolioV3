@@ -49,7 +49,7 @@
 </script>
 
 <style scoped lang="scss">
-    @import "../../static/css/global.scss";
+    @import "~assets/css/global.scss";
     a{
         color: $text-color;
         text-decoration: none;

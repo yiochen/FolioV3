@@ -27,7 +27,7 @@ const routes= [
     { path: '/front', component: FrontEndView },
     { path: '/design', component: DesignView },
     { path: '/contact', component: ContactView },
-    { path: '/projects', component: ProjectContainer,
+    { path: '/projects/:section', component: ProjectContainer,
       children: [
           { path: 'siege', component: SiegeNebula},
           { path: 'cheese', component: ProjectCheese},

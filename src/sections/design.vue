@@ -10,7 +10,7 @@
         <img v-lazy="'../../static/images/design/Semiformal.png'">
         -->
         <project-card project-title="ChinaBlue"
-            description="Over the one year at China Blue, a campus media club, I designed beautiful posters for various events." project-path="projects/chinablue"
+            description="Over the one year at China Blue, a campus media club, I designed beautiful posters for various events." project-path="projects/design/chinablue"
             techs="Photoshop,Illustrator, Googling loyalty-free assets"></project-card>
     </section>
     <!--</transition>-->
@@ -18,7 +18,7 @@
 
 <style scoped lang="scss">
 
-    @import "../../static/css/global.scss";
+    @import "~assets/css/global.scss";
     
    
 </style>

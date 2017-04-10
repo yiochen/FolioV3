@@ -9,7 +9,7 @@
 </script>
 
 <style scoped lang="scss">
-    @import "../../static/css/global.scss";
+    @import "~assets/css/global.scss";
     .text {
         position: absolute;
         bottom: 0;

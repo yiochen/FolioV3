@@ -3,7 +3,7 @@
 </template>
 
 <style scoped lang="scss">
-     @import "../../static/css/global.scss";
+     @import "~assets/css/global.scss";
      .separator {
          width: calc(100% - 40px);
          max-width: 760px;

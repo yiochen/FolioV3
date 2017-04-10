@@ -12,7 +12,7 @@
         <div class="intro">
             <h1 class="hi">Hi</h1>
             <h2>I am <router-link to="/contact" class="yiou">Yiou</router-link></h2>
-            <h5 class="description">I am a passionate <router-link to="/game" class="underline role">front-end developer</router-link> <span class="ampersand">&amp;</span> <router-link to="/front" class="underline role">game developer</router-link></h5>
+            <h5 class="description">I am a passionate <router-link to="/front" class="underline role">front-end developer</router-link> <span class="ampersand">&amp;</span> <router-link to="/game" class="underline role">game developer</router-link></h5>
         </div>
         </transition>
         
@@ -21,7 +21,7 @@
 </template>
 
 <style scoped lang="scss">
-    @import "../../static/css/global.scss";
+    @import "~assets/css/global.scss";
     
     .main-container {
         width: 100%;

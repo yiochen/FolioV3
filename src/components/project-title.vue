@@ -29,7 +29,7 @@
     }
 </script>
 <style scoped lang="scss">
-    @import "../../static/css/global.scss";
+    @import "~assets/css/global.scss";
     .title {
        text-align: center;
        margin-bottom: 0;

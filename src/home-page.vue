@@ -31,6 +31,6 @@ export default {
 };
 </script>
 
-<style>
-  @import '../static/css/global.scss';
+<style lang="scss">
+  @import "~assets/css/global.scss";
 </style>

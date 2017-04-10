@@ -1,6 +1,6 @@
 `Floral` is a small artistic expression using [Paper.js](http://paperjs.org/). I tried to dynamically generate some kind of floral patterns, such as the one below.
 
-![flora](http://res.cloudinary.com/yiou-me/image/upload/v1487981737/front-end/floral-example.png)
+![flora](https://res.cloudinary.com/yiou-me/image/upload/v1487981737/front-end/floral-example.png)
 
 The drawing part is easy, [Paper.js](http://paperjs.org/) makes it very simple to manipulate HTML Canvas. My plan was the following:
 1. Starting from center of the canvas, create a root for the branch

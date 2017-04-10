@@ -1,6 +1,6 @@
 <template>
     <button class="arrow-container" @click="next()">
-        <img src="../../static/images/Arrow.png" :class="orientation">
+        <img src="assets/images/Arrow.png" :class="orientation">
         <span v-if="label">{{label}}</span>
     </button>
 </template>

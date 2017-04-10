@@ -1,8 +1,8 @@
 <template>
-    <button @click="goBack()">&lt; BACK</button>
+    <router-link :to="'/'+section"><button>&lt; BACK</button></router-link>
 </template>
 <style lang="scss" scoped>
-    @import "../../static/css/variables.scss";
+    @import "~assets/css/variables.scss";
 
     button {
         border: none;
@@ -27,8 +27,6 @@
 <script>
     import router from '../routes.js';
     module.exports = {
-        methods: {
-            goBack: () => router.go(-1)
-        }
+        props: ['section']
     }
 </script>

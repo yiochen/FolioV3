@@ -10,7 +10,7 @@
 </template>
 
 <style lang="scss" scoped>
-    @import "../../static/css/global.scss";
+    @import "~assets/css/global.scss";
         .section-intro {
         background: $colored-background;
         position: relative;
