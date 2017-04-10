@@ -6,7 +6,7 @@
                 <router-link to="/front">FrontEnd</router-link>
                 <router-link to="/design">Design</router-link>
                 <router-link to="/contact">About</router-link>
-                <a href="http://yiou.me/blog/">Blog</a>
+                <a href="https://yiochen.github.io/blog/">Blog</a>
             </div>
         <transition name="fade" appear>
         <div class="intro">
