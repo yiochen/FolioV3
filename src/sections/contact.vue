@@ -11,7 +11,7 @@
                 <p>I am currently working at CA Technologies as a software engineer intern. At work, I play with <i>Angular</i> and <i>D3</i> magic. Recently, I am building responsive data visualizations that are both performant and user-friendly. I like to think about code structure and state management. My strength are Front-end development and game programming, but I also try to keep a broad interest toward all kind of technologies.
                 </p>
 
-                <p>Most of my projects are hosted on <a target="_blank" href="https://github.com/yiochen">Github</a>. Feel free to check them out! Wait, there is more, I am also keeping a <a target="_blank" href="http://yiou.me/blog">blog</a> <span class="small">(that no one reads)</span> on Web dev, game programming, etc. Check it out too!</p>
+                <p>Most of my projects are hosted on <a target="_blank" href="https://github.com/yiochen">Github</a>. Feel free to check them out! Wait, there is more, I am also keeping a <a target="_blank" href="https://yiochen.github.io/blog/">blog</a> <span class="small">(that no one reads)</span> on Web dev, game programming, etc. Check it out too!</p>
             </div>
             <div class="contact-icons">
                 <div>
