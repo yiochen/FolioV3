@@ -5,7 +5,7 @@
             <router-link to="/front">FrontEnd</router-link>
             <router-link to="/design">Design</router-link>
             <router-link to="/contact">About</router-link>
-            <a href="https://yiochen.github.io/blog/">Blog</a>
+            <a href="https://yiochen.github.io/blog/" target="_blank">Blog</a>
         </div>
         <transition name="fade" appear>
             <div class="intro">
@@ -29,6 +29,7 @@
 
 .main-container {
     width: 100%;
+    transform: translateY(calc(50vh - 150px));
 }
 
 .hi {
@@ -49,7 +50,6 @@
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
-    margin-top: calc(45vh - 200px);
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -142,6 +142,12 @@
         li:hover {
             background: transparent;
         }
+    }
+}
+
+@media(max-width: 960px) {
+    .nav-links {
+        display: none;
     }
 }
 </style>

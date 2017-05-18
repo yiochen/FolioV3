@@ -2,10 +2,7 @@
     <!--<transition name="fade">-->
     <section class="contact-container">
     
-        <h1 class="title">
-            <router-link to="/">
-                <logo></logo>
-            </router-link>More about me?</h1>
+        <h1 class="title">More about me?</h1>
     
         <div class="contacts">
             <div class="contact-intro">
@@ -29,7 +26,7 @@
                     <icon-button icon="envelop" @iconclick="openEmail"></icon-button>
                 </div>
                 <icon-button icon="github" linkto="
-                            https://www.linkedin.com/in/yiouchen"></icon-button>
+                                https://www.linkedin.com/in/yiouchen"></icon-button>
     
                 <icon-button icon="linkedin" linkto="https://www.linkedin.com/in/yiouchen">
                 </icon-button>

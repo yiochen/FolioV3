@@ -20,11 +20,11 @@ import ProjectContainer from "./projects/project-container";
 
 Vue.use(VueRouter);
 const routes = [
-  { path: "/", component: MainView },
-  { path: "/game", component: GameView },
-  { path: "/front", component: FrontEndView },
-  { path: "/design", component: DesignView },
-  { path: "/contact", component: ContactView },
+  { path: "/", component: MainView, nicePrint: "HOME" },
+  { path: "/game", component: GameView, nicePrint: "GAME" },
+  { path: "/front", component: FrontEndView, nicePrint: "FRONT END" },
+  { path: "/design", component: DesignView, nicePrint: "DESIGN" },
+  { path: "/contact", component: ContactView, nicePrint: "CONTACT" },
   {
     path: "/projects/:section",
     component: ProjectContainer,
@@ -45,5 +45,11 @@ const router = new VueRouter({
   mode: "history",
   routes
 });
+router.getNicePrintFromSection = function(section) {
+  let filtered = routes.filter(route => route.path.includes(section));
+  if (filtered.length > 0) {
+    return filtered[0].nicePrint;
+  }
+};
 
 export default router;
