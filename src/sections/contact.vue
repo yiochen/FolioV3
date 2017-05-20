@@ -7,13 +7,12 @@
         <div class="contacts">
             <div class="contact-intro">
                 <p>Hi, my name is
-                    <i>Yiou Chen</i> (pronounced like "E.O"). Thank you for stopping by. I am a senior at Stony Brook University, studying Computer Science and Digital Art. I am graduating
-                    <strong>very soon</strong> at
+                    <i>Yiou Chen</i> (pronounced like "EE-Oh"). Thank you for stopping by. I graduated from Stony Brook University, with Bachelor of Science in Computer Science at
                     <span class="underline">May 2017</span>. I am actively seeking full time position as a software engineer. If you are looking for some one and my portfolio happened to interest you, shoot me a email! I will be more than happy to talk with you about my qualification. </p>
     
-                <p>I am currently working at CA Technologies as a software engineer intern. At work, I play with
+                <p>When I was in Stony Brook, I worked at CA Technologies as a software engineer intern. I played with
                     <i>Angular</i> and
-                    <i>D3</i> magic. Recently, I am building responsive data visualizations that are both performant and user-friendly. I like to think about code structure and state management. My strength are Front-end development and game programming, but I also try to keep a broad interest toward all kind of technologies.
+                    <i>D3</i>. I built responsive data visualizations that were both performant and user-friendly. I like to think about code structure and state management. My strength are Front-end development and game programming, but I also try to keep a broad interest toward all kind of technologies.
                 </p>
     
                 <p>Most of my projects are hosted on
@@ -26,7 +25,7 @@
                     <icon-button icon="envelop" @iconclick="openEmail"></icon-button>
                 </div>
                 <icon-button icon="github" linkto="
-                                https://www.linkedin.com/in/yiouchen"></icon-button>
+                                                                        https://www.linkedin.com/in/yiouchen"></icon-button>
     
                 <icon-button icon="linkedin" linkto="https://www.linkedin.com/in/yiouchen">
                 </icon-button>

@@ -29,7 +29,6 @@
 
 .main-container {
     width: 100%;
-    transform: translateY(calc(50vh - 150px));
 }
 
 .hi {
@@ -53,6 +52,9 @@
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+
+    transform: translateY(calc(50vh - 200px));
+
     @include folded-corner;
 }
 
