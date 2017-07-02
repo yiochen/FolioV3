@@ -2,7 +2,7 @@
   <div id="app">
   
     <div class="floating-menu float-left">
-      <icon-button class="floating-icon" icon="home" routerlinkto="/"></icon-button>
+      <icon-button class="floating-icon" icon="logo" routerlinkto="/"></icon-button>
     </div>
   
     <div class="floating-menu float-right">
