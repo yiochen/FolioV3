@@ -1,38 +1,40 @@
 <template>
     <a v-if="linkto" class="contact-icon" v-bind:class="[iconClass]" :href="linkto" target="_blank">
     </a>
-    <router-link v-else-if="routerlinkto" class="contact-icon" v-bind:class="[iconClass]" :to="routerlinkto"></router-link>
+    <router-link v-else-if="routerlinkto" class="contact-icon" v-bind:class="[iconClass]" :to="routerlinkto">
+    </router-link>
     
-    <a v-else class="contact-icon" v-bind:class="[iconClass]" @click="onClick()"></a>
+    <a v-else class="contact-icon" v-bind:class="[iconClass]" @click="onClick()">
+    </a>
 </template>
 
 <script>
-    export default {
-        props: {
-            icon: {
-                type: String,
-                default: ''
-            },
-            linkto: {
-                type: String,
-                default: ''
-            },
-            routerlinkto: {
-                type: String,
-                default: ''
-            }
+export default {
+    props: {
+        icon: {
+            type: String,
+            default: ''
         },
-        computed: {
-            iconClass: function() { 
-                return this.icon ? 'icon-' + this.icon : '';
-            }
+        linkto: {
+            type: String,
+            default: ''
         },
-        methods: {
-            onClick: function() {
-                this.$emit('iconclick');
-            }
+        routerlinkto: {
+            type: String,
+            default: ''
+        }
+    },
+    computed: {
+        iconClass: function () {
+            return this.icon ? 'icon-' + this.icon : '';
+        }
+    },
+    methods: {
+        onClick: function () {
+            this.$emit('iconclick');
         }
     }
+}
 </script>
 
 <style lang="scss" scoped>

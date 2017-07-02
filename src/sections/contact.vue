@@ -7,25 +7,25 @@
         <div class="contacts">
             <div class="contact-intro">
                 <p>Hi, my name is
-                    <i>Yiou Chen</i> (pronounced like "EE-Oh"). Thank you for stopping by. I graduated from Stony Brook University, with Bachelor of Science in Computer Science at
-                    <span class="underline">May 2017</span>. I am actively seeking full time position as a software engineer. If you are looking for some one and my portfolio happened to interest you, shoot me a email! I will be more than happy to talk with you about my qualification. </p>
+                    <i>Yiou Chen</i> (pronounced "EE-Oh"). Thank you for stopping by. I graduated from
+                    <a href="http://www.stonybrook.edu/" target="_blank">Stony Brook University</a>
+                    , with Bachelor of Science in Computer Science in May 2017. Now I am an associate software engineer at
+                    <a href="https://www.veeva.com/" target="_blank">Veeva Systems</a> working in the UI platform team.</p>
     
-                <p>When I was in Stony Brook, I worked at CA Technologies as a software engineer intern. I played with
-                    <i>Angular</i> and
-                    <i>D3</i>. I built responsive data visualizations that were both performant and user-friendly. I like to think about code structure and state management. My strength are Front-end development and game programming, but I also try to keep a broad interest toward all kind of technologies.
+                <p>I am currently using React in my daily work. I have experience with Angular and D3 from my previous internship at
+                    <a href="https://www.ca.com/" target="_blank">CA Technologies</a>. I also tried out VueJS. In fact, this website was developed in VueJS.
                 </p>
     
                 <p>Most of my projects are hosted on
                     <a target="_blank" href="https://github.com/yiochen">Github</a>. Feel free to check them out! Wait, there is more, I am also keeping a
                     <a target="_blank" href="https://yiochen.github.io/blog/">blog</a>
-                    <span class="small">(that no one reads)</span> on Web dev, game programming, etc. Check it out too!</p>
+                    <span class="small">(that no one reads)</span> on web dev, game programming, etc. Check it out too!</p>
             </div>
             <div class="contact-icons">
                 <div>
                     <icon-button icon="envelop" @iconclick="openEmail"></icon-button>
                 </div>
-                <icon-button icon="github" linkto="
-                                                                        https://www.linkedin.com/in/yiouchen"></icon-button>
+                <icon-button icon="github" linkto="https://www.linkedin.com/in/yiouchen"></icon-button>
     
                 <icon-button icon="linkedin" linkto="https://www.linkedin.com/in/yiouchen">
                 </icon-button>

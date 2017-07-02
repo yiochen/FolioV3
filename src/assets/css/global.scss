@@ -1,114 +1,113 @@
 @import "./variables.scss";
 
-
 section {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: $text-color;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 100%;
-    transition: height 0.5s;
+  color: $text-color;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100%;
+  transition: height 0.5s;
 }
 
-a h2{
-    color: $text-color;
+a h2 {
+  color: $text-color;
 }
 
 @mixin folded-corner {
-    &::after {
-        content: '';
-        
-        border-top: 20px solid $corner-color;
-        border-right: 20px solid $background-color;
-        width: 0;
-        height: 0;
-        display: block;
-        
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
+  &::after {
+    content: '';
 
+    border-top: 20px solid $corner-color;
+    border-right: 20px solid $background-color;
+    width: 0;
+    height: 0;
+    display: block;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .no-bottom-margin {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .next-arrow {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    left: 0;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  left: 0;
 }
 
-
 .no-shadow {
-    transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
 }
 
 .mini-shadow,
 .mini-shadow-hover:hover {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: box-shadow 0.3s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: box-shadow 0.3s;
 }
 
 .large-shadow,
 .large-shadow-hover:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: box-shadow 0.3s;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: box-shadow 0.3s;
 }
 
 .hover-darken {
-    transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 .hover-darken:hover {
-    background: $hover-background-color;
-    transition: background 0.3s easel
+  background: $hover-background-color;
+  transition: background 0.3s easel;
 }
 
-.slide-down-enter-active, .slide-down-leave-active {
-    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+.slide-down-enter-active,
+.slide-down-leave-active {
+  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.slide-down-enter, .slide-down-leave-to {
-    transform: translateY(-100%);
+.slide-down-enter,
+.slide-down-leave-to {
+  transform: translateY(-100%);
 }
 
-.fade-enter-active, .fade-leave-active {
-    transition: opacity 0.7s ease;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.7s ease;
 }
 
-.fade-enter, .fade-leave {
-    opacity: 0;
+.fade-enter,
+.fade-leave {
+  opacity: 0;
 }
 
 .underline {
-        text-decoration: none;
-        
-        border-bottom: 1px solid $text-color;
-        padding-bottom: 2px;
+  text-decoration: none;
+
+  border-bottom: 1px solid $text-color;
+  padding-bottom: 2px;
 }
 
 .overhead-banner {
-    background: $colored-background;
-    position: relative;
-    box-sizing: border-box;
-    padding: 20px;
-     margin-left: auto;
-    margin-right: auto;
-@include folded-corner;
+  background: $colored-background;
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  @include folded-corner;
 }
 
 @media (min-width: 800px) {
-    .overhead-banner {
-        max-width: 800px;
-    }
+  .overhead-banner {
+    max-width: 800px;
+  }
 }
 
 @media (max-width: 960px) {
-    .overhead-banner {
-        max-width: calc(100% - 160px);
-    }
+  .overhead-banner {
+    max-width: calc(100% - 160px);
+  }
 }

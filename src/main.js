@@ -1,9 +1,10 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 
-require("assets/css/normalize.css");
-require("assets/css/skeleton.css");
-require("assets/icomoon/style.css");
+import "base.css/base.css";
+// require("assets/css/normalize.css");
+// require("assets/css/skeleton.css");
+import "assets/icomoon/style.css";
 var path = require("path");
 import Vue from "vue";
 import router from "./routes";
@@ -19,7 +20,7 @@ import ProjectCard from "./components/project-card";
 import BackgroundText from "./components/background-text";
 import ProjectTitle from "./components/project-title";
 import GithubRibbon from "./components/github-ribbon";
-import Logo from "./components/logo";
+// import Logo from "./components/logo";
 import CloudImage from "./components/cloud-image";
 import BackButton from "./components/back-button";
 import CloudVideo from "./components/cloud-video";
@@ -29,7 +30,8 @@ import IconButton from "./components/icon-button";
 
 Vue.use(VueLazyload, {
   preload: 1.3,
-  loading: "https://res.cloudinary.com/yiou-me/image/upload/v1491867341/loading_ykuxq7.png",
+  loading:
+    "data:image/gif;base64,R0lGODlhAQABAPAAAO7u7v///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==",
   attempt: 1
 });
 Vue.use(VueResource);
@@ -41,7 +43,7 @@ Vue.component("ProjectTitle", ProjectTitle);
 Vue.component("GithubRibbon", GithubRibbon);
 Vue.component("VueMarkdown", VueMarkdown);
 Vue.component("MarkdownLoader", MarkdownLoader);
-Vue.component("Logo", Logo);
+// Vue.component("Logo", Logo);
 Vue.component("CloudImage", CloudImage);
 Vue.component("BackButton", BackButton);
 Vue.component("CloudVideo", CloudVideo);

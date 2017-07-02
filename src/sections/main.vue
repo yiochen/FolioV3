@@ -68,7 +68,6 @@
 
 .description {
     text-align: right;
-    font-family: serif;
     font-style: italic;
     margin: 0;
 }
